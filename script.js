@@ -54,7 +54,7 @@ boton.onclick = function(){
 
 // localStorage.setItem("listaLS", JSON.stringify(lista));
 
-/*
+
 
 // ALL: al hacer clic sobre ALL eliminará todas las tareas - Eliminación por HTML Collection
 let opcionAll = document.getElementById("all")
@@ -96,6 +96,6 @@ lista.onclick = function(ev){
     }
 };
 
-*/
+
 
 
