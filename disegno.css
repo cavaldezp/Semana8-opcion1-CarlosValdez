@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    position: absolute;
+    left:40%;
+    top: 20%;
+    background-color: gainsboro;
+    width: 500px;
+    text-align: center;
+
+}
+
+h1{
+    margin: 12px 0;
+}
+.agrega-tareas{
+    margin: 10px 0;
+    
+}
+input{
+    padding: 6px 4px;
+    width: 70%;
+}
+button{
+    padding: 7px 14px;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    color: #fafafa;
+
+}
+
+.opciones-limpieza{
+   display: flex;
+   margin: 20px 20px;
+}
+
+
+ul{
+    padding: 15px;
+   
+}
+
+li{
+    text-align: left;
+    list-style: none; 
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    border-radius: 3px;
+}
+
+
+/* Tarea Seleccionada */
+.seleccionada{
+    text-decoration: line-through;
+    background-color: #fff;
+    color: red;
+}
+
+
+
+/* Cambia color de boton Add cuando ratón pasa por encima de él*/
+button:hover{
+    background-color: purple;
+}
+
