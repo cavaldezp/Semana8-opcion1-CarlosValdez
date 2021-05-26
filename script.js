@@ -19,13 +19,18 @@ class claseLista {
 
     inicializarTareas(){
     console.log("Inicializando tarea");    
-    // this._tareas = [];
+    
     } 
     
 
-    anadirTarea(tarea3){
+    anadirTarea(tarea3){            // tarea3 no es parte del constructor de claseLista
         this.tareas.push(tarea3);
-        // this._tareas.push(tarea3);
+    
+    }
+
+    resetTareas(){
+        console.log("Vaciando tareas");
+        this.tareas.splice(0,this.tareas.length);
     }
     
 };
@@ -64,17 +69,19 @@ let opcionAll = document.getElementById("all")
             lista.removeChild(lista.firstChild);
           }
 
-     localStorage.removeItem("listaLS")
+          objetoLista.resetTareas(); 
 
     alert("Todas las tareas fueron eliminadas")
   })
 
 
 
+/*
+
 // DONE: al hacer clic sobre DONE eliminará solo las tareas que fueron realizadas
 let opcionDone = document.getElementById("done")
     opcionDone.addEventListener("click",function(){
-
+        
         let tareaSeleccionada = document.getElementsByClassName("seleccionada");
         while(tareaSeleccionada.length > 0){
         
@@ -83,6 +90,7 @@ let opcionDone = document.getElementById("done")
        
         }
         
+    
 
     alert("Las tareas seleccionadas fueron eliminadas")
   })
@@ -96,6 +104,6 @@ lista.onclick = function(ev){
     }
 };
 
-
+*/
 
 
